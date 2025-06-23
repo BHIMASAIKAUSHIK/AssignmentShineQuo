@@ -1,0 +1,153 @@
+/* src/styles/components.css */
+
+/* Card Components */
+.card-container {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col;
+  }
+  
+  .card-image {
+    @apply w-full h-48 object-cover;
+  }
+  
+  .card-content {
+    @apply p-6 flex flex-col flex-grow;
+  }
+  
+  .card-title {
+    @apply text-xl font-bold text-gray-800 mb-2;
+  }
+  
+  .card-description {
+    @apply text-gray-600 flex-grow mb-4;
+  }
+  
+  .card-button-container {
+    @apply mt-auto;
+  }
+  
+  .card-button {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 w-full;
+  }
+  
+  .card-resources {
+    @apply mt-4 space-y-3 border-t pt-4;
+  }
+  
+  .resource-item {
+    @apply bg-gray-50 p-3 rounded;
+  }
+  
+  .resource-title {
+    @apply font-medium text-gray-800;
+  }
+  
+  .resource-description {
+    @apply text-sm text-gray-600 max-w-2xl mb-2;
+  }
+  
+  .resource-link {
+    @apply text-blue-600 hover:text-blue-800 text-sm font-medium;
+  }
+  
+  /* Form Components */
+  .modal-overlay {
+    @apply fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50;
+  }
+  
+  .modal-container {
+    @apply bg-white rounded-lg p-6 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto;
+  }
+  
+  .modal-header {
+    @apply flex justify-between items-center mb-4;
+  }
+  
+  .modal-title {
+    @apply text-2xl font-bold text-gray-800;
+  }
+  
+  .modal-close-button {
+    @apply text-gray-500 hover:text-gray-700 text-2xl;
+  }
+  
+  .form-container {
+    @apply space-y-4;
+  }
+  
+  .form-group {
+    @apply space-y-1;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  
+  .form-textarea {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  
+  .button-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .button-secondary {
+    @apply px-4 py-2 text-gray-600 border border-gray-300 rounded-md hover:bg-gray-50;
+  }
+  
+  .button-success {
+    @apply bg-green-600 hover:bg-green-700 text-white text-sm px-3 py-2 rounded-md;
+  }
+  
+  .button-link {
+    @apply text-blue-600 text-sm;
+  }
+  
+  /* Resources Form */
+  .resources-container {
+    @apply border rounded p-3 mt-3 space-y-3;
+  }
+  
+  .resource-form-item {
+    @apply space-y-2;
+  }
+  
+  .resource-form-label {
+    @apply text-sm text-gray-600;
+  }
+  
+  .resource-form-input {
+    @apply w-full px-3 py-2 border rounded;
+  }
+  
+  /* Layout Components */
+  .page-container {
+    @apply min-h-screen bg-gray-100 py-8 px-4;
+  }
+  
+  .main-container {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  .header-section {
+    @apply text-center mb-12;
+  }
+  
+  .page-title {
+    @apply text-4xl font-bold text-gray-800 mb-4;
+  }
+  
+  .page-subtitle {
+    @apply text-lg text-gray-600 max-w-2xl mx-auto;
+  }
+  
+  .cards-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .form-buttons {
+    @apply flex justify-end space-x-3 pt-4;
+  }
